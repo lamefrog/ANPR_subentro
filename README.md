@@ -13,21 +13,21 @@ Il sistema ANPR mette a disposizione dei Comuni le necessarie funzionalità per:
 - verificare il funzionamento del proprio sistema gestionale integrato con i servizi di ANPR (WS);
 - verificare l’allineamento delle proprie basi dati locali di servizio (WA integrata e WS).
 
-Si rimanda alla [**Guida ad ANPR**](https://www.anpr.interno.it/portale/guida-anpr) che sintetizza le funzionalità a disposizione dei Comuni.
+Si rimanda alla [**Guida ad ANPR**](https://www.anpr.interno.it/portale/guida-anpr) per la descrizione sintetica delle funzionalità a disposizione dei Comuni.
 
 Indipendentemente dalla scelte dei Comuni, per assicurare il trasferimento dei dati dalla APR e AIRE locali al database centrale di ANPR, i Comuni predispongano i necessari file di subentro e inoltrano gli stessi al sistema ANPR nelle modalità indicate nel documento [**Invio del file di subentro**](https://www.anpr.interno.it/portale/documents/20182/23925/Invio+file+di+Subentro.pdf/e0c98d8d-363a-4ca3-adcf-3e9613632be4).
 
-Le attività di subentro, in breve, prevedono l'esecuzione delle seguente azioni:
+Le attività di subentro prevedono l'esecuzione delle seguenti azioni:
 
-- il Comune estrare le informazioni contenute nei propri sistemi locali (APR e AIRE), predispone i file di subentro nel rispetto del formatto definito ed inoltra gli stessi al sistema ANPR tramite le funzionalità messe a disposizione dalla WA;
-- completato l’invio, i dati trasmessi dal Comune sono sottoposti ai seguenti controlli  formali: (i) validazione del codice fiscale previo confronto con l'Anagrafe Tributaria e (ii) verifica di congruità  con  i  dati  contenuti  nell'ANPR  al momento del subentro.
+1. il Comune estrae le informazioni contenute nei propri sistemi locali (APR e AIRE), predispone i file di subentro nel rispetto del formato definito ed inoltra gli stessi al sistema ANPR tramite le funzionalità messe a disposizione dalla WA;
+2. completato l’invio, i dati trasmessi dal Comune sono sottoposti ai seguenti controlli  formali: (i) validazione del codice fiscale previo confronto con l'Anagrafe Tributaria e (ii) verifica di congruità  con  i  dati  contenuti  nell'ANPR  al momento del subentro.
 
-I controlli formali realizzati dal sistema ANPR possono determinare l'evidenza di anomalie nei file trasmessi dal Comune, di specie sono previste le seguenti *severità* per le anomalie rilevate:
+I controlli formali realizzati dal sistema ANPR possono determinare l'evidenza di anomalie nei file trasmessi dal Comune; nel dettaglio sono previste le seguenti *severità* per le anomalie rilevate:
 
-- **warning non bloccanti**, nel caso in cui si riscontrino difformità tra i dati trasmessi dal Comune e quelli attesi dal sistema ANPR che possono essere risolti successivamente al subentro (ad esempio Comune/provincia di registrazione atto di cessazione/annullamento matrimonio inesistente);
-- **warning da rimuovere prima del subentro**, nel caso in cui si riscontrino nei dati trasmessi dal Comune situazioni che richiedono un intervento sui dati da realizzarsi prima del subentro (ad esempio Codice fiscale formalmente non corretto);
-- **errori**, nel caso in cui i file inoltrati dal Comune presentano inconguenze sostanziali che rendono non accettabile i dati da parte del sistema ANPR (ad esempio totale schede soggetto dichiarato nel file incongruente con l'effettivo numero di schede soggetto inoltrate).
+- **warning non bloccanti**, si riscontrano difformità tra i dati trasmessi dal Comune e quelli attesi dal sistema ANPR, ma queste possono essere risolte successivamente al subentro (ad esempio: comune di registrazione dell'atto di annullamento di un matrimonio non indicato);
+- **warning da rimuovere prima del subentro**, si riscontrano difformità tra i dati trasmessi dal Comune e quelli attesi dal sistema ANPR che richiedono un intervento sui dati da realizzarsi prima del subentro (ad esempio Codice fiscale formalmente non corretto);
+- **errori**, i file inoltrati dal Comune presentano incongruenze tali da rendere non accettabili i dati da parte del sistema ANPR (ad esempio totale schede soggetto dichiarato nel file incongruente con l'effettivo numero di schede soggetto inoltrate).
 
-Per aggevolare le attività dei Comuni per la gestione delle anomalie che possono presentarsi a valle dell'inoltro dei file di subentro al sistema ANPR, si sono individuate una serie di procedure che i Comuni possono adottare per le differenti anomalie che il sistema ANPR segnalera a valle dell'esecuzione dei controlli formali previsti.
+Per agevolare le attività dei Comuni nella gestione delle anomalie, si sono individuate procedure che i Comuni possono adottare.
 
 Nella [**tabella anomalie ANPR**](TAB01_ANOMALIE_ANPR.md) sono elencate le anomalie che il sistema ANPR rileva e, per ognuna di esse, si riporta il *codice anomalia* che la codifica, il *messaggio di errore* che viene indicato al Comune al riscontro della stessa, la *severità* associata all'anomalia, la *procedura suggerita* che il Comune può attuare per eliminare l'anomalia riscontrata. 
